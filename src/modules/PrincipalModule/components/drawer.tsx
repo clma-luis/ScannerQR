@@ -53,11 +53,11 @@ export function DrawerDialog(props: DrawerDialogProps) {
       <Drawer open={open} onOpenChange={setOpen}>
         <DrawerTrigger asChild>
           {isLaoding ? (
-            <Skeleton className="h-60 w-60 rounded-full " />
+            <Skeleton className="h-40 w-60" />
           ) : (
             <>
               {!hideBtn && (
-                <Button className="rounded-full h-60 w-60 focus:bg-[#002167] text-[24px] font-bold" onClick={handleQRBtn}>
+                <Button className="h-40 w-60 focus:bg-[#002167] text-[24px] font-bold" onClick={handleQRBtn}>
                   Escanear QR
                 </Button>
               )}
@@ -82,9 +82,9 @@ export function DrawerDialog(props: DrawerDialogProps) {
         {!hideBtn && (
           <>
             {isLaoding ? (
-              <Skeleton className="h-60 w-60 rounded-full " />
+              <Skeleton className="h-40 w-60 " />
             ) : (
-              <Button className="rounded-full h-60 w-60 focus:bg-[#002167] text-[24px] font-bold" onClick={handleQRBtn}>
+              <Button className=" h-40 w-60 focus:bg-[#002167] text-[24px] font-bold" onClick={handleQRBtn}>
                 Escanear QR
               </Button>
             )}
