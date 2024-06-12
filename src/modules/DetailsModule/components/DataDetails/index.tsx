@@ -51,10 +51,10 @@ const DataDetails = () => {
           <SkeletonDetails />
         ) : (
           <div className="w-full grid gap-1 grid-cols-2 justify-start pb-2">
-            <SubtitleSection subtitle="Información Socio" />
+            <SubtitleSection subtitle="Información" />
             <div />
             <BoxComponent config={socioInfoConfig} data={currentData} />
-            <SubtitleSection subtitle="Información Embarcación" className="mt-6 col-span-2" />
+            <SubtitleSection subtitle="Información Dos" className="mt-6 col-span-2" />
             <BoxComponent config={embarcacionInfoConfig} data={currentData} />
             <div />
             <div className="p-1 pt-4">
